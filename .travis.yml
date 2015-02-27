@@ -2,10 +2,16 @@ language: java
 jdk:
 - oraclejdk8
 - oraclejdk7
-
 before_install:
-  - wget https://github.com/Cnly/Crafter/archive/1.2.1.tar.gz -O crafter.jar
-  - tar -xvf crafter.jar
-  - cd Crafter-1.2.1/Crafter
-  - mvn clean install
-  - cd ../..
+- wget https://github.com/Cnly/Crafter/archive/1.2.1.tar.gz -O crafter.jar
+- tar -xvf crafter.jar
+- cd Crafter-1.2.1/Crafter
+- mvn clean install
+- cd ../..
+deploy:
+  provider: releases
+  api_key:
+    secure: loIwMtW8lRZF9BD5b5qgbHmyPFktdV4smWrge0h5/9i9gg4SOgpdI+Wv+c46eobKb5ccP6DGodNcW9zAeGtgC2rXFEB1JltXfvNWCd3eRxrL3xs2Wkb27Lv8yJpuNfyZv8UPzgamXUiaiPuGS0emSJWYLkKITXkbaRkJC1I2wlk=
+  file: target/trtest-0.0.1-SNAPSHOT.jar
+  on:
+    repo: Cnly/trtest
