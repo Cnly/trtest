@@ -6,7 +6,6 @@ jdk:
 before_install:
   - wget https://github.com/Cnly/Crafter/archive/1.2.0.tar.gz -O /tmp/crafter.jar
   - cd /tmp
-  - mkdir crafter
-  - tar -xvf crafter.jar -C crafter
-  - cd crafter/Crafter
+  - tar -xvf crafter.jar
+  - cd Crafter-1.2.0/Crafter
   - mvn install
