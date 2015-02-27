@@ -10,6 +10,7 @@ before_install:
 - cd ../..
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: loIwMtW8lRZF9BD5b5qgbHmyPFktdV4smWrge0h5/9i9gg4SOgpdI+Wv+c46eobKb5ccP6DGodNcW9zAeGtgC2rXFEB1JltXfvNWCd3eRxrL3xs2Wkb27Lv8yJpuNfyZv8UPzgamXUiaiPuGS0emSJWYLkKITXkbaRkJC1I2wlk=
   file: target/trtest-0.0.1-SNAPSHOT.jar
