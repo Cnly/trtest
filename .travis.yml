@@ -8,3 +8,4 @@ before_install:
   - tar -xvf crafter.jar
   - cd Crafter-1.2.1/Crafter
   - mvn clean install
+  - cd ../..
