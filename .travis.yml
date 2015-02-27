@@ -3,7 +3,7 @@ jdk:
 - oraclejdk8
 - oraclejdk7
 
-before_install:
+before_script:
   - wget https://github.com/Cnly/Crafter/archive/1.2.1.tar.gz -O /tmp/crafter.jar
   - cd /tmp
   - tar -xvf crafter.jar
