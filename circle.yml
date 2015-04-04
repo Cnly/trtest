@@ -5,5 +5,6 @@ machine:
     - wget https://github.com/Cnly/Crafter/archive/1.2.1.tar.gz -O crafter.jar
     - tar -xvf crafter.jar
     - cd Crafter-1.2.1/Crafter
-    - mvn clean install
+    - mvn clean install:
+        pwd: $HOME/Crafter-1.2.1/Crafter
     - cd ../..
