@@ -10,4 +10,4 @@ machine:
     - cd ../..
 general:
   artifacts:
-    - "target/trtest-0.0.1-SNAPSHOT.jar"
+    - "target/trtest-*.jar"
