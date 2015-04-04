@@ -8,3 +8,6 @@ machine:
     - mvn clean install:
         pwd: $HOME/Crafter-1.2.1/Crafter
     - cd ../..
+general:
+  artifacts:
+    - "target/trtest-0.0.1-SNAPSHOT"
